@@ -23,7 +23,6 @@ window.addEventListener("load", function (){
             index++;
             index= index%slidersLength;
             lengthTransform  = index * sliderItemWidth * -1;
-            console.log(lengthTransform)
             sliderMain.style.transform = `translate(${lengthTransform}px)`;
         }
         else if(direction ===-1){
@@ -31,15 +30,8 @@ window.addEventListener("load", function (){
             if (index === -1) {
                 index = slidersLength - 1;
             }
-            console.log(index);
             lengthTransform = Math.abs(index) % slidersLength * sliderItemWidth * -1;
-            console.log(lengthTransform)
             sliderMain.style.transform = `translate(${lengthTransform}px)`;
         }
-    }
-   
-   
-
-    
-    
+    } 
 });
