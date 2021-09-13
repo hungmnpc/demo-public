@@ -109,8 +109,15 @@ html {
   width: 15px;
   height: 15px;
   border-radius: 100%;
-  background-color: #999;
+  background-color: rgb(129, 123, 123);
+  opacity: 0.8;
+  cursor: pointer;
+  transition: background-color 0.25s linear;
+  border: 1px solid rgb(59, 58, 58);
 }
 .slider-dots li.active{
   background-color: white;
+  border: 1px solid rgb(163, 161, 161);
+  width: 18px;
+  height: 18px;
 }
